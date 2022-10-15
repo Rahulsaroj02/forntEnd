@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 0px 10px;
+    }
+
+    header {
+        background-color: rgb(252, 251, 249);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header h1 {
+        color: crimson;
+    }
+
+    nav {
+        background-color: rgb(235, 189, 132);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: white;
+        background-color: rgb(230, 10, 10);
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    nav ul li {
+        display: flex;
+        list-style: none;
+        padding: 10px 10px;
+
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 5vh;
+        position: sticky;
+    }
+
+
+    .container1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 63vh;
+    }
+
+    .container1 .btn {
+        background-color: rgb(209, 206, 14);
+        border-radius: 4px;
+    }
+
+    .container1::before {
+        content: '';
+        background: url("./1.jpg") no-repeat center center/cover;
+        width: 100vw;
+        height: 59vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-right: 45px;
+        font-weight: bold;
+        z-index: -1;
+    }
+
+    .open1 {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 50px;
+    }
+
+
+
+    .row1 {
+        width: 24vw;
+        height: 37vh;
+        box-shadow: 2px 7px 16px 19px;
+        margin-top: 51px;
+        margin-bottom: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        margin-right: 38px;
+        border-radius: 40px;
+    }
+
+    .row1::before {
+        content: '';
+        background: url('https://c8.alamy.com/comp/FW5BX3/cartoon-funny-italian-chef-cartoon-holding-platter-with-ok-sign-FW5BX3.jpg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 24vw;
+        height: 37vh;
+        z-index: -1;
+        border-radius: 40px;
+    }
+
+    .row2 {
+        position: relative;
+        width: 24vw;
+        height: 37vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 50px 0px;
+        border: 2px solid black;
+        box-shadow: 2px 7px 20px 10px;
+        border-radius: 42px;
+    }
+
+    .row2::before {
+        content: '';
+        background: url(https://images.freeimages.com/images/premium/previews/6373/6373793-cartoon-chef.jpg) no-repeat center center/cover;
+        top: 0;
+        border-radius: 40px;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 24vw;
+        height: 37vh;
+    }
+
+    .container5 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 63vh
+    }
+
+    .container5::before {
+        content: '';
+        background: url(https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2889%2Ftrend20200722152815.jpg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 59vh;
+        z-index: -1;
+        border-bottom-left-radius: 100px;
+        opacity: 0.89;
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 50vh;
+    }
+
+
+    .row6 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190503-delish-pineapple-baked-salmon-horizontal-ehg-450-1557771120.jpg?crop=0.669xw:1.00xh;0.173xw,0&resize=640:*) no-repeat center center/cover;
+        position: relative;
+        width: 27vw;
+        height: 35vh;
+        border: 2px solid black;
+        border-radius: 25px;
+        box-shadow: 0px 10px 15px 20px;
+    }
+
+    .row4 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        width: 27vw;
+        height: 35vh;
+        border: 2px solid black;
+        border-radius: 25px;
+        box-shadow: 0px 10px 15px 20px;
+        margin: 0px 27px;
+        background: url(https://img.traveltriangle.com/blog/wp-content/uploads/2018/12/cover-for-street-food-in-sydney.jpg) no-repeat center center/cover;
+
+    }
+
+    .row5 {
+        width: 30vw;
+        height: 35vh;
+        box-shadow: 0px 10px 15px 20px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        border-radius: 15px;
+        background: url(https://images.everydayhealth.com/images/diet-nutrition/34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg?sfvrsn=a31d8d32_0)no-repeat center center/cover;
+    }
+
+
+    @media only screen and (max-width:900px) {
+        .row6 {
+            width: 70vw;
+            height: 30vh;
+            margin: 20px;
+        }
+
+        .row5 {
+            width: 70vw;
+            height: 30vh;
+            margin-bottom: 150px;
+        }
+
+        .row4 {
+            height: 30vh;
+            margin: 37px;
+            width: 70vw;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container3 {
+            margin-top: 150px;
+            height: 100vh;
+        }
+
+        .footer {
+            position: static;
+        }
+    }
+
+
+
+    .row5 .btn:hover {
+        background-color: yellow;
+        color: black;
+    }
+
+    .row4 .btn:hover {
+        background-color: yellow;
+        color: black;
+    }
+
+    .row6 .btn:hover {
+        background-color: yellow;
+        color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 class="top">online</h1>
+        <h3 class="top2">foodshop</h3>
+    </header>
+    <hr>
+
+    <nav class="navbar">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/food-company-logo-design-template-6deb84ff3a409053e3f865b719250d7b_screen.jpg?ts=1589979123"
+            alt="" width="80px">
+        <ul class="navcontent">
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">manu</a></li>
+            <li><a href="contant.html">contant us</a></li>
+        </ul>
+    </nav>
+    <div class="container5">
+        <div class="heading">
+            <h2>welcome to online foodshop</h2>
+        </div>
+        <button class="btn">order now</button>
+        <div class="container1">
+            <div class="open1">
+                <div class="row1">
+                    <button class="btn">perices</button>
+                </div>
+                <div class="row2">
+                    <button class="btn">specials</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container3">
+
+        <div class="heading2">
+            <h2>Featured Products</h2>
+        </div><br>
+        <div class="container">
+            <div class="row6"> <button class="btn">order now</button></div>
+            <div class="row4">
+                <button class="btn">order now</button>
+            </div>
+            <div class="row5">
+                <button class="btn">order now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            copyright &copy;online food
+        </div>
+    </footer>
+</body>
+
+</html>

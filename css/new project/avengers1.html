@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #000000;
+        }
+        .container{
+            width: 700px;
+            height: auto;
+            margin: 150px auto;
+            position: relative;
+        }
+        .circle{
+            width: 600px;
+            height: 600px;
+            border: solid 50px #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 70px;
+            z-index: 10;
+        }
+        .a-1{
+            width: 100px;
+            height: 770px;
+            background: #ffffff;
+            position: absolute;
+            left: 200px;
+            transform: skewX(-25deg);
+            z-index: 20;
+        }
+        .a-2{
+            width: 100px;
+            height: 337px;
+            background: #ffffff;
+            position: absolute;
+            left: 380px;
+            z-index: 30;
+        }
+        .a-3{
+            width: 168px;
+            height: 100px;
+            background: #ffffff;
+            position: absolute;
+            top: 410px;
+            left: 212px;
+z-index: 40;
+        }
+        .arrow-right{
+            width: 0px;
+            height: 0px;
+            border-top: 90px solid transparent;
+            border-bottom: 90px solid transparent;
+            border-left:120px solid #ffffff ;
+            position: absolute;
+            top: 368px;
+           z-index: 50;
+            left: 380px;
+        }
+        .arrow-down{
+            width: 0px;
+            height: 0px;
+            border-bottom: 75px solid transparent;
+            border-right:100px solid #ffffff ;
+            position: absolute;
+            top: 337px;
+            left: 380px;
+            z-index: 60;
+        }
+        .arrow-left{
+            width: 0px;
+            height: 0px;
+            border-top: 80px solid transparent;
+            border-right:102px solid #ffffff ;
+            position: absolute;
+            top: 497px;
+            left: 380px;
+            z-index: 70;
+        }
+        .black-bar-1,
+        .black-bar-2{
+            width: 30px;
+            height: 97px;
+            position: absolute;
+            transform: skewX(-25deg);
+            z-index: 80;
+        }
+        .black-bar-1{
+            top: 565px;
+            left: 64px;
+            background: #000000;
+        }
+        .black-bar-2{
+            top: 644px;
+            left: 157px;
+            background: #000000;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="circle"></div>
+        <div class="a-1"></div>
+        <div class="a-2"></div>
+        <div class="a-3"></div>
+        <div class="arrow-right"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-left"></div>
+        <div class="black-bar-1"></div>
+        <div class="black-bar-2"></div>
+    </div>
+</body>
+</html>

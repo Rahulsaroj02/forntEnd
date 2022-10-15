@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111827;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+         margin-top: 10rem;   
+         width: 8rem;
+         height: 8rem;
+         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+         border-radius: 25px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        .inner-box{
+            border: 8px solid white;
+            width: 70%;
+            height: 70%;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .inner-box::after{
+            content: '';
+             border: 8px solid white;
+             width:50% ;
+             height: 50%;
+             border-radius: 45px;
+        }
+        .inner-box::before{
+            content: '';
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+            position: absolute;
+            top: 7px;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>
